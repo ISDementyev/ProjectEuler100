@@ -1,13 +1,8 @@
-import numpy as np
 from numba import jit
 
 ################## helper functions ########################################################
 def d(n):
     return sum([i for i in range(1, n) if n % i == 0])
-
-def dn(n):
-    arr = np.arange(1, n)
-    return np.sum(np.where(n % arr == 0, arr, 0))
 
 @jit
 def dj(n):

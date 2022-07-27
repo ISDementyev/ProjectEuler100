@@ -1,6 +1,7 @@
 import numpy as np
 from numba import jit
 
+################## helper functions ########################################################
 def d(n):
     return sum([i for i in range(1, n) if n % i == 0])
 
@@ -24,6 +25,7 @@ def problem21_slow(N):
             
     return sum(amicables)
 
+################## main function ########################################################
 def problem21(N): # overall speedup is roughly 30-fold (excluding loading numpy and jit)
     amicables = set()
     

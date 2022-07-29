@@ -41,4 +41,5 @@ int Problem28(int n)
 int main()
 {
     std::cout << Problem28(1001) << "\n";
+    return 0;
 }

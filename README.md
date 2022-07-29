@@ -6,3 +6,6 @@ Each directory in problems/ corresponds to a problem. If the directory for a pro
 
 Each directory contains at least one file - a python file which contains a function that solves the problem. Sometimes, an optimized version written by me 
 will be available and distinguished clearly from the non-optimized functions within the same py file. Types of optimization include (but are not limited to) vectorizations with Numpy and just-in-time compilation.
+
+## Package requirements
+Numba and Numpy are required, the version numbers are up to the user's discretion. 

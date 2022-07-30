@@ -5,8 +5,8 @@ def Problem28(n):
     n = (n - 1) // 2
     
     # generate diagonal values:
-    diagonals = [3]
     start = 3
+    Sum = 3
     
     for i in range(1, n + 1):
         if i == 1:
@@ -16,17 +16,17 @@ def Problem28(n):
             
         for _ in range(times + 1):
             start += i * 2
-            diagonals.append(start)
+            Sum += start
                 
-    return sum(diagonals) + 1 # returns sum(diagonals) + 1 since diagonal generation does not include 1x1 case
+    return Sum + 1
 
 @jit
 def Problem28J(n):
     n = (n - 1) // 2
     
     # generate diagonal values:
-    diagonals = [3]
     start = 3
+    Sum = 3
     
     for i in range(1, n + 1):
         if i == 1:
@@ -36,9 +36,9 @@ def Problem28J(n):
             
         for _ in range(times + 1):
             start += i * 2
-            diagonals.append(start)
+            Sum += start
                 
-    return sum(diagonals) + 1
+    return Sum + 1
   
 print(Problem28(1001))
-print(Problem28J(1001)) # roughly 47x faster
+print(Problem28J(1001)) # roughly 164x faster

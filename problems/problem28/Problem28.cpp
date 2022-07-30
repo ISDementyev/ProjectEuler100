@@ -1,6 +1,6 @@
 #include <iostream>
 
-int Problem28(int n)
+int Problem28(int& n)
 {
     n = (n - 1) / 2;
 
@@ -28,6 +28,7 @@ int Problem28(int n)
 
 int main()
 {
-    std::cout << Problem28(1001) << "\n";
+    int Dim = 1001;
+    std::cout << Problem28(Dim) << "\n";
     return 0;
 }

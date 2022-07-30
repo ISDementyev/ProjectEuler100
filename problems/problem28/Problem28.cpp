@@ -23,7 +23,7 @@ int Problem28(int n)
             sum += start;
         }
     }
-    return sum + 1;
+    return sum + 1; // since the loop does not account for the 1x1 matrix case, we include it here by adding the 1 (1x1 answer) here
 }
 
 int main()

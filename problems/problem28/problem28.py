@@ -41,4 +41,4 @@ def Problem28J(n):
     return Sum + 1
   
 print(Problem28(1001))
-print(Problem28J(1001)) # roughly 164x faster
+print(Problem28J(1001)) # roughly 160-223x faster

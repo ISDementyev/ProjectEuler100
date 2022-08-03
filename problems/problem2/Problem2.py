@@ -2,10 +2,11 @@ from math import sqrt
 
 # helpers
 def FibonacciBinet(N):
-    phi = (1 + sqrt(5)) / 2
-    phiN = (1 - sqrt(5)) / 2
+    Root5 = sqrt(5)
+    phi = (1 + Root5) / 2
+    phiN = (1 - Root5) / 2
     
-    return round((phi ** N - phiN ** N) / sqrt(5))
+    return round((phi ** N - phiN ** N) / Root5)
 
 # main - currently unoptimized
 def Problem2():
@@ -16,7 +17,7 @@ def Problem2():
 
     return sum([j for j in Fibonacci(i - 1) if j % 2 == 0])
 
-# More simpler and easier to read, but not much faster
+# More simpler and easier to read, but is actually slower than the above main function
 def Problem2Simpler():
     i = 2
     Sum = 0

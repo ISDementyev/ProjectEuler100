@@ -11,4 +11,4 @@ Each directory contains at least one file - a python file which contains a funct
 will be available and distinguished clearly from the non-optimized functions within the same py file. Types of optimization include (but are not limited to) vectorizations with Numpy and just-in-time compilation.
 
 ## Package requirements
-Numba and Numpy are required, the version numbers are up to the user's discretion and the versions' compatibilities. The math module (one of python's built-in modules) is also used for some problems.
+Numba and Numpy are required, the version numbers are up to the user's discretion and the versions' compatibilities. Built-in Python modules are not listed.
